@@ -3,9 +3,39 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			margin: 0;
+		}
+		main {
+			height: 100%;
+			display: grid;
+			position: absolute;
+			top: 0; right: 0; bottom: 0; left: 0;
+			justify-items: center;
+			align-items: center;
+		}
+		img {
+			height: 50vmin;
+			width: 50vmin;
+		}
+		.visually-hidden {
+			position: absolute;
+			opacity: 0;
+		}
+	</style>
 </head>
 <body>
-	<h1>tails</h1>
+	<h1 class="visually-hidden">Heads or Tails</h1>
+
+	<main>
+		<a href="/"><img src="/images/tails.svg" alt="tails"></a>
+	</main>
+
 	<script>
 		(function(){ document.cookie = "nf_ab=;max-age=0" })();
 	</script>
